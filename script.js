@@ -71,10 +71,45 @@ function addErrorMessage(divId, message) {
 // Show user age when inputs are correct
 function showUserAge(dayInput, monthInput, yearInput) {
     let userAge = calculateAge(dayInput, monthInput, yearInput);
-    document.getElementById("years-result").innerText = userAge.years;
-    document.getElementById("months-result").innerText = userAge.months;
-    document.getElementById("days-result").innerText = userAge.days;
+
+    let yearEl = document.getElementById("years-result");
+    let monthEl = document.getElementById("months-result");
+    let dayEl = document.getElementById("days-result");
+
+    // Reset placeholders before animating
+    yearEl.innerText = 0;
+    monthEl.innerText = 0;
+    dayEl.innerText = 0;
+
+    // Animate to final values
+    animateNumber(yearEl, userAge.years, 1500);
+    animateNumber(monthEl, userAge.months, 1200);
+    animateNumber(dayEl, userAge.days, 900);
 }
+
+
+//---------------- animation for numbers ------------------
+
+function animateNumber(element, target, duration = 1200) {
+    let start = 0;
+    let range = target - start;
+    let stepTime = Math.max(Math.floor(duration / range), 20); // never too fast
+    let startTime = Date.now();
+
+    function update() {
+        let elapsed = Date.now() - startTime;
+        let progress = Math.min(elapsed / duration, 1);
+        let value = Math.floor(progress * range + start);
+        element.innerText = value;
+
+        if (progress < 1) {
+            requestAnimationFrame(update);
+        }
+    }
+
+    requestAnimationFrame(update);
+}
+
 
 /* ---------------- Validation ---------------- */
 function validateDate(dayInput, monthInput, yearInput) {

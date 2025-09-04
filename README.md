@@ -43,8 +43,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Bendaoud-Bilal/AgeCalculator)
-- Live Site URL: [Add live site URL here](https://age-calculator-puce-eight.vercel.app/)
+- Solution URL: [Github](https://github.com/Bendaoud-Bilal/AgeCalculator)
+- Live Site URL: [Vercel-live-site](https://age-calculator-puce-eight.vercel.app/)
 
 ## My process
 
@@ -55,7 +55,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [Styled Components](https://styled-components.com/) - For styles
+
 
 
 
