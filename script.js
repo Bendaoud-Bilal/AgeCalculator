@@ -1,3 +1,13 @@
+//---------------- Event Listener ---------------- //
+const toggleBtn = document.getElementById("theme-toggle");
+
+toggleBtn.addEventListener("click", () => {
+    document.documentElement.classList.toggle("dark");
+});
+
+
+
+//---------------- Main Function ---------------- //
 function calculateAgeMain(dayInput, monthInput, yearInput) {
     resetFormState();
 
@@ -5,13 +15,13 @@ function calculateAgeMain(dayInput, monthInput, yearInput) {
 
     if (validateDateResult === "correct-input") {
         showUserAge(dayInput, monthInput, yearInput);
-    } 
+    }
     else if (validateDateResult === "invalid-input") {
         applyErrorStyle();
         addErrorMessage("day-div", "Must be a valid day");
         addErrorMessage("month-div", "Must be a valid month");
         addErrorMessage("year-div", "Must be a valid year");
-    } 
+    }
     else if (validateDateResult === "missing-input") {
         applyErrorStyle();
 

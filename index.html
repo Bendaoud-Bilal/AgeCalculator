@@ -1,54 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,800&display=swap"
+        rel="stylesheet">
 
     <title>Age Calculator</title>
 </head>
+
 <body>
     <header role="head"></header>
-    <body>
 
-        <div id = "root-div">
+    <body>
+        <button id="theme-toggle">Toggle Theme</button>
+
+        <div id="root-div">
+
             <div id="input-div">
                 <div id="day-div">
-                    <label class = "label-class" id="day-label">D A Y</label>
-                    <input class = "input-class" id="days-input" placeholder="DD">
+                    <label class="label-class" id="day-label">D A Y</label>
+                    <input class="input-class" id="days-input" placeholder="DD">
                 </div>
                 <div id="month-div">
-                    <label class = "label-class" id="month-label">M O N T H</label>
-                    <input class = "input-class" id="months-input" placeholder="MM">
+                    <label class="label-class" id="month-label">M O N T H</label>
+                    <input class="input-class" id="months-input" placeholder="MM">
                 </div>
                 <div id="year-div">
-                    <label class = "label-class" id="year-label">Y E A R</label>
-                    <input class = "input-class" id="years-input" placeholder="YYYY">
+                    <label class="label-class" id="year-label">Y E A R</label>
+                    <input class="input-class" id="years-input" placeholder="YYYY">
                 </div>
-                  
+
             </div>
 
-            <div id = "botton-div">
+            <div id="botton-div">
                 <hr id="hr-line">
-                <div id ="img-div" onclick= "calculateAgeMain(document.getElementById('days-input').value , document.getElementById('months-input').value, document.getElementById('years-input').value)">
-                    <img id="arrow-botton" src="resources/icon-arrow.svg"
-                     alt="arrow" >
+                <div id="img-div"
+                    onclick="calculateAgeMain(document.getElementById('days-input').value , document.getElementById('months-input').value, document.getElementById('years-input').value)">
+                    <img id="arrow-botton" src="resources/icon-arrow.svg" alt="arrow">
                 </div>
-                
+
 
             </div>
 
-            <div id = "result-div">
-                <p class = "result-class1"><span class = "result-class2" id="years-result">- -</span> years</p>
-                <p class = "result-class1"><span class = "result-class2" id="months-result">- -</span> months</p>
-                <p class = "result-class1"><span class = "result-class2" id="days-result">- -</span> days</p>
-                
+            <div id="result-div">
+                <p class="result-class1"><span class="result-class2" id="years-result">- -</span> years</p>
+                <p class="result-class1"><span class="result-class2" id="months-result">- -</span> months</p>
+                <p class="result-class1"><span class="result-class2" id="days-result">- -</span> days</p>
+
             </div>
         </div>
     </body>
     <footer role="foot"></footer>
-    
+
 </body>
+
 </html>
