@@ -82,7 +82,7 @@ Users should be able to:
 ## Author
 
 - Email - [Bendaoud-Bilal] (bendaoudbilal717@gmail.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Bendaoud-Bilal)
+- Frontend Mentor - [@Bendaoud-Bilal](https://www.frontendmentor.io/profile/Bendaoud-Bilal)
 
 
 
