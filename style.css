@@ -54,6 +54,20 @@ body {
     font-weight: bold;
 }
 
+
+/*      Title        */
+
+/* Default (light mode) */
+.title {
+  color: hsl(259, 100%, 65%);
+}
+
+/* Dark mode */
+.dark .title {
+  color: #21E6C1;
+}
+
+
 /* Root container */
 #root-div {
     margin: 5% 25% 2%;
